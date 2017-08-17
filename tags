@@ -1,0 +1,14 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+append	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def append(data)$/;"	f	language:Ruby	class:DoublyLinkedList
+DoublyLinkedList	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^class DoublyLinkedList$/;"	c	language:Ruby
+getData	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def getData$/;"	f	language:Ruby	class:Node
+getNext	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def getNext$/;"	f	language:Ruby	class:Node
+getPrev	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def getPrev$/;"	f	language:Ruby	class:Node
+initialize	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def initialize$/;"	f	language:Ruby	class:DoublyLinkedList
+initialize	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def initialize(data, prev_node = nil, next_node = nil)$/;"	f	language:Ruby	class:Node
+Node	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^class Node$/;"	c	language:Ruby
+prepend	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def prepend(data)$/;"	f	language:Ruby	class:DoublyLinkedList
+setData	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def setData(data)$/;"	f	language:Ruby	class:Node
+setNext	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def setNext(node)$/;"	f	language:Ruby	class:Node
+setPrev	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def setPrev(node)$/;"	f	language:Ruby	class:Node
+traverse	/home/tevin/Documents/Development/ruby/doublylinkedlist.rb	/^	def traverse$/;"	f	language:Ruby	class:DoublyLinkedList
