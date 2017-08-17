@@ -36,6 +36,24 @@ class LinkedList
         end
     end
 
+    def reverse
+        if !@head.nil?
+            current = @head.next_node
+            prev = @head
+
+            prev.next_node = nil
+
+            while !current.nil?
+                temp = current.next_node
+                current.next_node = prev
+                prev = current
+                current = temp
+            end
+
+            @head = prev
+        end
+    end
+
     def traverse
         if !@head.nil?
             current = @head
@@ -53,5 +71,9 @@ list.append(5)
 list.append(6)
 list.prepend(70)
 list.append(8)
+
+list.traverse
+puts "-----------------------------------"
+list.reverse
 
 list.traverse
