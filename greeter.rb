@@ -17,6 +17,9 @@ class MegaGreeter
       @names.each do |name|
         puts "Hello #{name}!"
       end
+      @names.each_with_index do |name, index|
+        puts "Friend #{index + 1}: #{name}"
+      end
     else
       puts "Hello #{@names}!"
     end
