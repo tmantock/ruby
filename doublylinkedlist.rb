@@ -51,6 +51,7 @@ class DoublyLinkedList
 		end
 
 		@tail.setNext(node)
+        node.setPrev(@tail)
 		@tail = node
 	end
 
@@ -64,6 +65,24 @@ class DoublyLinkedList
 		@head.setPrev(node)
 		@head = node
 	end
+
+    def reverse
+        if @head.nil? or @tail.nil?
+            return
+        end
+
+        current = guard = @tail
+
+        while !current.nil?
+            prev = current.getPrev
+            current.setPrev(current.getNext)
+            current.setNext(prev)
+            current = prev
+        end
+
+        @tail = @head
+        @head = guard
+    end
 
 	def traverse
 		if !@head.nil?
@@ -80,4 +99,10 @@ dl = DoublyLinkedList.new
 dl.append(7)
 dl.append(0)
 dl.prepend(3)
+dl.append(5)
+dl.append(9)
+dl.append(83)
+dl.traverse
+puts "-------------------------------------"
+dl.reverse
 dl.traverse
